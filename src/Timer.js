@@ -42,7 +42,7 @@ class Timer extends Component {
             placeholder="Set Timer"
             value={this.state.amount}
             onChange={this.setAmount}
-            style={{ width: "60%" }}
+            style={{ width: "30%", margin: "20px" }}
           />
           <br />
           <input type="submit" onClick={this.setTimer} value="Set Timer" />
