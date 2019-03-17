@@ -45,7 +45,19 @@ class Timer extends Component {
             style={{ width: "30%", margin: "20px" }}
           />
           <br />
-          <input type="submit" onClick={this.setTimer} value="Set Timer" />
+          <div className="btn-group" role="group" aria-label="Basic example">
+            <button
+              type="submit"
+              className="btn btn-secondary"
+              onClick={this.setTimer}
+              value="Set Timer"
+            >
+              <button type="button" className="btn btn-secondary">
+                Middle
+              </button>
+              Set Timer
+            </button>
+          </div>
         </div>
         <div>
           {this.state.set ? <div>{this.state.time}</div> : <div>Unset</div>}
